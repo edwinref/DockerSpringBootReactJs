@@ -39,7 +39,7 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 ### 3. Configuration de Docker Compose
 Créez un fichier docker-compose.yml à la racine du projet :
-
+```
 version: "3"
 services:
   springboot-app:
@@ -66,14 +66,17 @@ services:
     build: ./frontend
     ports:
       - 3000:80
+```
 ### 4. Construire et Exécuter les Conteneurs
 Lancez la commande suivante dans votre terminal :
-
+```
 docker-compose up
-
+```
 ### 5. Accéder à l'application
-Ouvrez votre navigateur et tapez l'URL suivante : http://localhost:3000/
-
+Ouvrez votre navigateur et tapez l'URL suivante :
+```
+http://localhost:3000/
+```
 
 
 
